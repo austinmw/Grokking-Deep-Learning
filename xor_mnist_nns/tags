@@ -1,0 +1,271 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Net	pytorch_mnist.py	/^class Net(nn.Module):$/;"	c
+NeuralNetwork	.ipynb_checkpoints/numpy_xor_detailed-checkpoint.py	/^class NeuralNetwork:$/;"	c
+NeuralNetwork	numpy_xor_detailed.py	/^class NeuralNetwork:$/;"	c
+W_ho	tf_xor_eager_minimal.py	/^W_ho = tf.get_variable(name = "W_ho", initializer=tf.random_uniform([3,1], -1, 1))$/;"	v
+W_ho	tf_xor_minimal.py	/^W_ho = tf.Variable(tf.random_uniform([3,1], -1, 1), name = "W_ho")$/;"	v
+W_ih	tf_xor_eager_minimal.py	/^W_ih = tf.get_variable(name = "W_ih", initializer=tf.random_uniform([2,3], -1, 1))$/;"	v
+W_ih	tf_xor_minimal.py	/^W_ih = tf.Variable(tf.random_uniform([2,3], -1, 1), name = "W_ih")$/;"	v
+X	keras_xor.py	/^X = np.array([[0,0],[0,1],[1,0],[1,1]], "float32")$/;"	v
+X	tf_xor_detailed.py	/^X = tf.placeholder(tf.float32, shape=(None, n_inputs), name='X')$/;"	v
+X	tf_xor_minimal.py	/^X = tf.placeholder(tf.float32, shape=[4,2], name = 'X')$/;"	v
+X_test	tf_xor_detailed.py	/^X_test = X_train$/;"	v
+X_train	tf_xor_detailed.py	/^X_train = [$/;"	v
+X_train	tf_xor_detailed.py	/^X_train = np.array(X_train)$/;"	v
+X_train	tf_xor_eager_minimal.py	/^X_train = tf.convert_to_tensor([[0,0],[0,1],[1,0],[1,1]], dtype=tf.float32)$/;"	v
+X_train	tf_xor_minimal.py	/^X_train = [[0,0],[0,1],[1,0],[1,1]]$/;"	v
+X_valid	tf_xor_detailed.py	/^X_valid = X_train$/;"	v
+Z	tf_xor_minimal.py	/^	Z = tf.tanh(tf.matmul(X, W_ih) + b_h)$/;"	v
+__init__	.ipynb_checkpoints/numpy_xor_detailed-checkpoint.py	/^    def __init__(self, input_nodes, hidden_nodes, output_nodes,$/;"	m	class:NeuralNetwork
+__init__	numpy_xor_detailed.py	/^    def __init__(self, input_nodes, hidden_nodes, output_nodes,$/;"	m	class:NeuralNetwork
+__init__	pytorch_mnist.py	/^    def __init__(self):$/;"	m	class:Net
+accuracy	tf_xor_detailed.py	/^    accuracy = tf.reduce_mean(tf.cast(correct, tf.float32))$/;"	v
+accuracy	tf_xor_eager_minimal.py	/^def accuracy(preds,actual):$/;"	f
+accuracy_summary	tf_xor_detailed.py	/^    accuracy_summary = tf.summary.scalar('accuracy', accuracy)$/;"	v
+accuracy_val	tf_xor_detailed.py	/^    accuracy_val = accuracy.eval(feed_dict={X: X_test, y: y_test})$/;"	v
+activation	keras_mnist.py	/^                 activation='relu',$/;"	v
+adam	keras_xor.py	/^adam = Adam(lr=0.1)$/;"	v
+alpha	.ipynb_checkpoints/numpy_xor-checkpoint.py	/^alpha = 0.1$/;"	v
+alpha	numpy_xor.py	/^alpha = 0.1$/;"	v
+b_h	tf_xor_eager_minimal.py	/^b_h = tf.get_variable(name = "b_h", initializer=tf.zeros([3]))$/;"	v
+b_h	tf_xor_minimal.py	/^b_h = tf.Variable(tf.zeros([3]), name = "b_h")$/;"	v
+b_o	tf_xor_eager_minimal.py	/^b_o = tf.get_variable(name = "b_o", initializer=tf.zeros([1]))$/;"	v
+b_o	tf_xor_minimal.py	/^b_o = tf.Variable(tf.zeros([1]), name = "b_o")$/;"	v
+backward	.ipynb_checkpoints/numpy_xor_detailed-checkpoint.py	/^    def backward(self, y):$/;"	m	class:NeuralNetwork
+backward	numpy_xor_detailed.py	/^    def backward(self, y):$/;"	m	class:NeuralNetwork
+batch_size	.ipynb_checkpoints/numpy_mnist_dropout_batch-checkpoint.py	/^batch_size = 100$/;"	v
+batch_size	.ipynb_checkpoints/numpy_mnist_dropout_batch_tanh_softmax-checkpoint.py	/^batch_size = 100$/;"	v
+batch_size	keras_mnist.py	/^          batch_size=batch_size,$/;"	v
+batch_size	keras_mnist.py	/^batch_size = 64$/;"	v
+batch_size	keras_mobilenet_cifar10.py	/^                                        batch_size=batch_size,$/;"	v
+batch_size	keras_mobilenet_cifar10.py	/^batch_size = 256$/;"	v
+batch_size	numpy_mnist_dropout_batch.py	/^batch_size = 100$/;"	v
+batch_size	numpy_mnist_dropout_batch_tanh_softmax.py	/^batch_size = 100$/;"	v
+batch_size	tf_xor_detailed.py	/^batch_size = 4$/;"	v
+best_loss	tf_xor_detailed.py	/^                    best_loss = loss_val$/;"	v
+best_loss	tf_xor_detailed.py	/^best_loss = np.infty$/;"	v
+bin_xentropy	tf_xor_eager_minimal.py	/^def bin_xentropy(output, y):$/;"	f
+calc_gradient	tf_xor_eager_minimal.py	/^def calc_gradient(X,y):$/;"	f
+checkpoint_epoch_path	tf_xor_detailed.py	/^checkpoint_epoch_path = checkpoint_path + ".epoch"$/;"	v
+checkpoint_path	tf_xor_detailed.py	/^checkpoint_path = "\/tmp\/my_xor_model.ckpt"$/;"	v
+clf	autokeras_mnist.py	/^clf = ak.ImageClassifier(verbose=True, augment=False)$/;"	v
+compute_accuracy	tf_mnist_eager.py	/^def compute_accuracy(logits, labels):$/;"	f
+correct	tf_xor_detailed.py	/^    correct = tf.equal(tf.greater_equal(probs,0.5), tf.cast(y,tf.bool))$/;"	v
+correct_cnt	.ipynb_checkpoints/numpy_mnist_dropout_batch_tanh_softmax-checkpoint.py	/^    correct_cnt = 0$/;"	v
+correct_cnt	numpy_mnist_dropout_batch_tanh_softmax.py	/^    correct_cnt = 0$/;"	v
+cost	tf_xor_minimal.py	/^	cost = tf.reduce_mean(((y * tf.log(output)) + ((1 - y) * tf.log(1.0 - output))) * -1)$/;"	v
+define_mnist_eager_flags	tf_mnist_eager.py	/^def define_mnist_eager_flags():$/;"	f
+dropout_mask	.ipynb_checkpoints/numpy_mnist_dropout_batch_tanh_softmax-checkpoint.py	/^        dropout_mask = np.random.randint(2,size=layer_1.shape)$/;"	v
+dropout_mask	numpy_mnist_dropout_batch_tanh_softmax.py	/^        dropout_mask = np.random.randint(2,size=layer_1.shape)$/;"	v
+epochs	keras_mnist.py	/^          epochs=epochs,$/;"	v
+epochs	keras_mnist.py	/^epochs = 10$/;"	v
+epochs	keras_mobilenet_cifar10.py	/^                                        epochs=epochs,$/;"	v
+epochs	keras_mobilenet_cifar10.py	/^epochs = 5$/;"	v
+epochs_without_progress	tf_xor_detailed.py	/^epochs_without_progress = 0$/;"	v
+file_writer	tf_xor_detailed.py	/^file_writer = tf.summary.FileWriter(logdir, tf.get_default_graph())$/;"	v
+final_model_path	tf_xor_detailed.py	/^final_model_path = ".\/final_model\/my_xor_model"$/;"	v
+fit	.ipynb_checkpoints/numpy_xor_detailed-checkpoint.py	/^    def fit(self, X, y, verbose=True):$/;"	m	class:NeuralNetwork
+fit	numpy_xor_detailed.py	/^    def fit(self, X, y, verbose=True):$/;"	m	class:NeuralNetwork
+forward	.ipynb_checkpoints/numpy_xor_detailed-checkpoint.py	/^    def forward(self, X, output=False):$/;"	m	class:NeuralNetwork
+forward	numpy_xor_detailed.py	/^    def forward(self, X, output=False):$/;"	m	class:NeuralNetwork
+forward	pytorch_mnist.py	/^    def forward(self, x):$/;"	m	class:Net
+hidden	tf_xor_detailed.py	/^    hidden = neuron_layer(X, n_hidden, name='hidden', activation=tf.nn.sigmoid)$/;"	v
+hidden_size	.ipynb_checkpoints/numpy_xor-checkpoint.py	/^hidden_size = 6$/;"	v
+hidden_size	numpy_xor.py	/^hidden_size = 6$/;"	v
+image_input	keras_mobilenet_cifar10.py	/^    image_input = tf.keras.Input(shape=x_train.shape[1:], name='image_input')$/;"	v
+init	tf_xor_detailed.py	/^init = tf.global_variables_initializer()$/;"	v
+init	tf_xor_minimal.py	/^init = tf.global_variables_initializer()$/;"	v
+input_shape	keras_mnist.py	/^                 input_shape=input_shape))$/;"	v
+input_shape	keras_mnist.py	/^    input_shape = (1, img_rows, img_cols)$/;"	v
+input_shape	keras_mnist.py	/^    input_shape = (img_rows, img_cols, 1)$/;"	v
+labels	.ipynb_checkpoints/numpy_mnist_dropout-checkpoint.py	/^labels = one_hot_labels$/;"	v
+labels	.ipynb_checkpoints/numpy_mnist_dropout_batch-checkpoint.py	/^labels = one_hot_labels$/;"	v
+labels	.ipynb_checkpoints/numpy_mnist_dropout_batch_tanh_softmax-checkpoint.py	/^labels = one_hot_labels$/;"	v
+labels	.ipynb_checkpoints/numpy_xor-checkpoint.py	/^labels = np.array([[ 1, 1, 0, 0]]).T$/;"	v
+labels	numpy_mnist_dropout.py	/^labels = one_hot_labels$/;"	v
+labels	numpy_mnist_dropout_batch.py	/^labels = one_hot_labels$/;"	v
+labels	numpy_mnist_dropout_batch_tanh_softmax.py	/^labels = one_hot_labels$/;"	v
+labels	numpy_xor.py	/^labels = np.array([[ 1, 1, 0, 0]]).T$/;"	v
+layer_0	.ipynb_checkpoints/numpy_mnist_dropout_batch_tanh_softmax-checkpoint.py	/^        layer_0 = images[batch_start:batch_end]$/;"	v
+layer_0	.ipynb_checkpoints/numpy_mnist_dropout_batch_tanh_softmax-checkpoint.py	/^        layer_0 = test_images[i:i+1]$/;"	v
+layer_0	.ipynb_checkpoints/numpy_xor-checkpoint.py	/^        layer_0 = xor[i:i+1]$/;"	v
+layer_0	numpy_mnist_dropout_batch_tanh_softmax.py	/^        layer_0 = images[batch_start:batch_end]$/;"	v
+layer_0	numpy_mnist_dropout_batch_tanh_softmax.py	/^        layer_0 = test_images[i:i+1]$/;"	v
+layer_0	numpy_xor.py	/^        layer_0 = xor[i:i+1]$/;"	v
+layer_1	.ipynb_checkpoints/numpy_mnist_dropout_batch_tanh_softmax-checkpoint.py	/^        layer_1 = tanh(np.dot(layer_0,weights_0_1))$/;"	v
+layer_1	.ipynb_checkpoints/numpy_xor-checkpoint.py	/^        layer_1 = relu(np.dot(layer_0,weights_0_1))$/;"	v
+layer_1	numpy_mnist_dropout_batch_tanh_softmax.py	/^        layer_1 = tanh(np.dot(layer_0,weights_0_1))$/;"	v
+layer_1	numpy_xor.py	/^        layer_1 = relu(np.dot(layer_0,weights_0_1))$/;"	v
+layer_1_delta	.ipynb_checkpoints/numpy_mnist_dropout_batch_tanh_softmax-checkpoint.py	/^        layer_1_delta = layer_2_delta.dot(weights_1_2.T) * tanh2deriv(layer_1)$/;"	v
+layer_1_delta	.ipynb_checkpoints/numpy_xor-checkpoint.py	/^        layer_1_delta=layer_2_delta.dot(weights_1_2.T)*relu2deriv(layer_1)$/;"	v
+layer_1_delta	numpy_mnist_dropout_batch_tanh_softmax.py	/^        layer_1_delta = layer_2_delta.dot(weights_1_2.T) * tanh2deriv(layer_1)$/;"	v
+layer_1_delta	numpy_xor.py	/^        layer_1_delta=layer_2_delta.dot(weights_1_2.T)*relu2deriv(layer_1)$/;"	v
+layer_2	.ipynb_checkpoints/numpy_mnist_dropout_batch_tanh_softmax-checkpoint.py	/^        layer_2 = np.dot(layer_1,weights_1_2)$/;"	v
+layer_2	.ipynb_checkpoints/numpy_mnist_dropout_batch_tanh_softmax-checkpoint.py	/^        layer_2 = softmax(np.dot(layer_1,weights_1_2))$/;"	v
+layer_2	.ipynb_checkpoints/numpy_xor-checkpoint.py	/^        layer_2 = np.dot(layer_1,weights_1_2)$/;"	v
+layer_2	numpy_mnist_dropout_batch_tanh_softmax.py	/^        layer_2 = np.dot(layer_1,weights_1_2)$/;"	v
+layer_2	numpy_mnist_dropout_batch_tanh_softmax.py	/^        layer_2 = softmax(np.dot(layer_1,weights_1_2))$/;"	v
+layer_2	numpy_xor.py	/^        layer_2 = np.dot(layer_1,weights_1_2)$/;"	v
+layer_2_delta	.ipynb_checkpoints/numpy_mnist_dropout_batch_tanh_softmax-checkpoint.py	/^        layer_2_delta = (labels[batch_start:batch_end]-layer_2) \/ (batch_size * layer_2.shape[0])$/;"	v
+layer_2_delta	.ipynb_checkpoints/numpy_xor-checkpoint.py	/^        layer_2_delta = (layer_2 - labels[i:i+1])$/;"	v
+layer_2_delta	numpy_mnist_dropout_batch_tanh_softmax.py	/^        layer_2_delta = (labels[batch_start:batch_end]-layer_2) \/ (batch_size * layer_2.shape[0])$/;"	v
+layer_2_delta	numpy_xor.py	/^        layer_2_delta = (layer_2 - labels[i:i+1])$/;"	v
+layer_2_error	.ipynb_checkpoints/numpy_xor-checkpoint.py	/^    layer_2_error = 0$/;"	v
+layer_2_error	numpy_xor.py	/^    layer_2_error = 0$/;"	v
+learning_rate	tf_xor_detailed.py	/^learning_rate = 1$/;"	v
+log_dir	tf_xor_detailed.py	/^def log_dir(prefix=""):$/;"	f
+logdir	tf_xor_detailed.py	/^logdir = log_dir("xor_nn")$/;"	v
+loss	tf_mnist_eager.py	/^def loss(logits, labels):$/;"	f
+loss_summary	tf_xor_detailed.py	/^    loss_summary = tf.summary.scalar('mse_loss', mse_loss)$/;"	v
+main	.ipynb_checkpoints/numpy_xor_detailed-checkpoint.py	/^def main():$/;"	f
+main	numpy_xor_detailed.py	/^def main():$/;"	f
+main	pytorch_mnist.py	/^def main():$/;"	f
+main	tf_mnist_eager.py	/^def main(_):$/;"	f
+max_epochs_without_progress	tf_xor_detailed.py	/^max_epochs_without_progress = 50$/;"	v
+metrics	keras_mnist.py	/^              metrics=['accuracy'])$/;"	v
+metrics	keras_mobilenet_cifar10.py	/^                                                        metrics=['accuracy'])$/;"	v
+model	keras_mnist.py	/^model = Sequential()$/;"	v
+model	keras_mobilenet_cifar10.py	/^    model = MobileNet(weights=None, input_shape=x_train.shape[1:], classes=num_classes)$/;"	v
+model	keras_mobilenet_cifar10.py	/^    model = tf.keras.Model(inputs=image_input, outputs=x)$/;"	v
+model	keras_xor.py	/^model = Sequential([$/;"	v
+mse_loss	tf_xor_detailed.py	/^    mse_loss = tf.reduce_mean(tf.squared_difference(y, probs), name='loss')$/;"	v
+n_epochs	tf_xor_detailed.py	/^n_epochs = 300$/;"	v
+n_hidden	tf_xor_detailed.py	/^n_hidden = 3$/;"	v
+n_inputs	tf_xor_detailed.py	/^n_inputs = 2$/;"	v
+n_outputs	tf_xor_detailed.py	/^n_outputs = 1$/;"	v
+neuron_layer	tf_xor_detailed.py	/^def neuron_layer(X, n_neurons, name, activation=None):$/;"	f
+nn	tf_xor_eager_minimal.py	/^def nn(X):$/;"	f
+num_classes	keras_mnist.py	/^num_classes = 10$/;"	v
+num_classes	keras_mobilenet_cifar10.py	/^num_classes = 10$/;"	v
+one_hot_labels	.ipynb_checkpoints/numpy_mnist_dropout-checkpoint.py	/^one_hot_labels = np.zeros((len(labels),10))$/;"	v
+one_hot_labels	.ipynb_checkpoints/numpy_mnist_dropout_batch-checkpoint.py	/^one_hot_labels = np.zeros((len(labels),10))$/;"	v
+one_hot_labels	.ipynb_checkpoints/numpy_mnist_dropout_batch_tanh_softmax-checkpoint.py	/^one_hot_labels = np.zeros((len(labels),10))$/;"	v
+one_hot_labels	numpy_mnist_dropout.py	/^one_hot_labels = np.zeros((len(labels),10))$/;"	v
+one_hot_labels	numpy_mnist_dropout_batch.py	/^one_hot_labels = np.zeros((len(labels),10))$/;"	v
+one_hot_labels	numpy_mnist_dropout_batch_tanh_softmax.py	/^one_hot_labels = np.zeros((len(labels),10))$/;"	v
+optimizer	keras_mnist.py	/^              optimizer=keras.optimizers.Adadelta(),$/;"	v
+optimizer	keras_mobilenet_cifar10.py	/^                                                        optimizer=tf.train.AdamOptimizer(0.001),$/;"	v
+optimizer	tf_xor_detailed.py	/^    optimizer = tf.train.GradientDescentOptimizer(learning_rate=learning_rate)$/;"	v
+optimizer	tf_xor_eager_minimal.py	/^optimizer = tf.train.GradientDescentOptimizer(0.1)$/;"	v
+option	keras_mobilenet_cifar10.py	/^option = 1$/;"	v
+output	tf_xor_minimal.py	/^	output = tf.sigmoid(tf.matmul(Z, W_ho) + b_o)$/;"	v
+predict	.ipynb_checkpoints/numpy_xor_detailed-checkpoint.py	/^    def predict(self,X):$/;"	m	class:NeuralNetwork
+predict	numpy_xor_detailed.py	/^    def predict(self,X):$/;"	m	class:NeuralNetwork
+preds	tf_xor_eager_minimal.py	/^def preds(probs):$/;"	f
+probs	tf_xor_detailed.py	/^    probs = neuron_layer(hidden, n_outputs, name='outputs', activation=tf.nn.sigmoid)$/;"	v
+relu	.ipynb_checkpoints/numpy_mnist_dropout-checkpoint.py	/^def relu(x):$/;"	f
+relu	.ipynb_checkpoints/numpy_mnist_dropout_batch-checkpoint.py	/^def relu(x):$/;"	f
+relu	.ipynb_checkpoints/numpy_xor-checkpoint.py	/^relu = lambda x: x.clip(min=0)$/;"	v
+relu	numpy_mnist_dropout.py	/^def relu(x):$/;"	f
+relu	numpy_mnist_dropout_batch.py	/^def relu(x):$/;"	f
+relu	numpy_xor.py	/^relu = lambda x: x.clip(min=0)$/;"	v
+relu2deriv	.ipynb_checkpoints/numpy_mnist_dropout-checkpoint.py	/^def relu2deriv(output):$/;"	f
+relu2deriv	.ipynb_checkpoints/numpy_mnist_dropout_batch-checkpoint.py	/^def relu2deriv(output):$/;"	f
+relu2deriv	.ipynb_checkpoints/numpy_xor-checkpoint.py	/^relu2deriv = lambda x: x>0$/;"	v
+relu2deriv	numpy_mnist_dropout.py	/^def relu2deriv(output):$/;"	f
+relu2deriv	numpy_mnist_dropout_batch.py	/^def relu2deriv(output):$/;"	f
+relu2deriv	numpy_xor.py	/^relu2deriv = lambda x: x>0$/;"	v
+reset_graph	tf_xor_detailed.py	/^def reset_graph(seed=42):$/;"	f
+run_mnist_eager	tf_mnist_eager.py	/^def run_mnist_eager(flags_obj):$/;"	f
+saver	tf_xor_detailed.py	/^saver = tf.train.Saver()$/;"	v
+score	keras_mnist.py	/^score = model.evaluate(x_test, y_test, verbose=0)$/;"	v
+score	keras_mobilenet_cifar10.py	/^score = model.evaluate(x_test, y_test, verbose=0)$/;"	v
+sess	tf_xor_minimal.py	/^sess = tf.Session()$/;"	v
+shuffle_batch	tf_xor_detailed.py	/^def shuffle_batch(X, y, batch_size):$/;"	f
+softmax	.ipynb_checkpoints/numpy_mnist_dropout_batch_tanh_softmax-checkpoint.py	/^def softmax(x):$/;"	f
+softmax	numpy_mnist_dropout_batch_tanh_softmax.py	/^def softmax(x):$/;"	f
+start	keras_mobilenet_cifar10.py	/^start = timer()$/;"	v
+start_epoch	tf_xor_detailed.py	/^            start_epoch = int(f.read())$/;"	v
+start_epoch	tf_xor_detailed.py	/^        start_epoch = 0$/;"	v
+tanh	.ipynb_checkpoints/numpy_mnist_dropout_batch_tanh_softmax-checkpoint.py	/^def tanh(x):$/;"	f
+tanh	numpy_mnist_dropout_batch_tanh_softmax.py	/^def tanh(x):$/;"	f
+tanh2deriv	.ipynb_checkpoints/numpy_mnist_dropout_batch_tanh_softmax-checkpoint.py	/^def tanh2deriv(output):$/;"	f
+tanh2deriv	numpy_mnist_dropout_batch_tanh_softmax.py	/^def tanh2deriv(output):$/;"	f
+test	pytorch_mnist.py	/^def test(args, model, device, test_loader):$/;"	f
+test	tf_mnist_eager.py	/^def test(model, dataset):$/;"	f
+test_correct_cnt	.ipynb_checkpoints/numpy_mnist_dropout_batch_tanh_softmax-checkpoint.py	/^    test_correct_cnt = 0$/;"	v
+test_correct_cnt	numpy_mnist_dropout_batch_tanh_softmax.py	/^    test_correct_cnt = 0$/;"	v
+test_images	.ipynb_checkpoints/numpy_mnist_dropout-checkpoint.py	/^test_images = x_test.reshape(len(x_test),28*28) \/ 255$/;"	v
+test_images	.ipynb_checkpoints/numpy_mnist_dropout_batch-checkpoint.py	/^test_images = x_test.reshape(len(x_test),28*28) \/ 255$/;"	v
+test_images	.ipynb_checkpoints/numpy_mnist_dropout_batch_tanh_softmax-checkpoint.py	/^test_images = x_test.reshape(len(x_test),28*28) \/ 255$/;"	v
+test_images	numpy_mnist_dropout.py	/^test_images = x_test.reshape(len(x_test),28*28) \/ 255$/;"	v
+test_images	numpy_mnist_dropout_batch.py	/^test_images = x_test.reshape(len(x_test),28*28) \/ 255$/;"	v
+test_images	numpy_mnist_dropout_batch_tanh_softmax.py	/^test_images = x_test.reshape(len(x_test),28*28) \/ 255$/;"	v
+test_labels	.ipynb_checkpoints/numpy_mnist_dropout-checkpoint.py	/^test_labels = np.zeros((len(y_test),10))$/;"	v
+test_labels	.ipynb_checkpoints/numpy_mnist_dropout_batch-checkpoint.py	/^test_labels = np.zeros((len(y_test),10))$/;"	v
+test_labels	.ipynb_checkpoints/numpy_mnist_dropout_batch_tanh_softmax-checkpoint.py	/^test_labels = np.zeros((len(y_test),10))$/;"	v
+test_labels	numpy_mnist_dropout.py	/^test_labels = np.zeros((len(y_test),10))$/;"	v
+test_labels	numpy_mnist_dropout_batch.py	/^test_labels = np.zeros((len(y_test),10))$/;"	v
+test_labels	numpy_mnist_dropout_batch_tanh_softmax.py	/^test_labels = np.zeros((len(y_test),10))$/;"	v
+tfe	tf_mnist_eager.py	/^tfe = tf.contrib.eager$/;"	v
+train	pytorch_mnist.py	/^def train(args, model, device, train_loader, optimizer, epoch):$/;"	f
+train	tf_mnist_eager.py	/^def train(model, optimizer, dataset, step_counter, log_interval=None):$/;"	f
+train_step	tf_xor_minimal.py	/^	train_step = tf.train.GradientDescentOptimizer(0.1).minimize(cost)$/;"	v
+training_op	tf_xor_detailed.py	/^    training_op = optimizer.minimize(mse_loss)$/;"	v
+val_acc	tf_xor_eager_minimal.py	/^    val_acc = accuracy(val_output,y_train) # y_val$/;"	v
+val_output	tf_xor_eager_minimal.py	/^    val_output = preds(nn(X_train)) # would be X_val$/;"	v
+validation_data	keras_mnist.py	/^          validation_data=(x_test, y_test))$/;"	v
+validation_data	keras_mobilenet_cifar10.py	/^                                        validation_data=(x_test, y_test))$/;"	v
+verbose	keras_mnist.py	/^          verbose=1,$/;"	v
+verbose	keras_mobilenet_cifar10.py	/^                                        verbose=1,$/;"	v
+weights_0_1	.ipynb_checkpoints/numpy_mnist_dropout-checkpoint.py	/^weights_0_1 = 0.2*np.random.random((pixels_per_image,hidden_size)) - 0.1$/;"	v
+weights_0_1	.ipynb_checkpoints/numpy_mnist_dropout_batch-checkpoint.py	/^weights_0_1 = 0.2*np.random.random((pixels_per_image,hidden_size)) - 0.1$/;"	v
+weights_0_1	.ipynb_checkpoints/numpy_mnist_dropout_batch_tanh_softmax-checkpoint.py	/^weights_0_1 = 0.02*np.random.random((pixels_per_image,hidden_size))-0.01$/;"	v
+weights_0_1	.ipynb_checkpoints/numpy_xor-checkpoint.py	/^weights_0_1 = 2*np.random.random((2,hidden_size)) - 1$/;"	v
+weights_0_1	numpy_mnist_dropout.py	/^weights_0_1 = 0.2*np.random.random((pixels_per_image,hidden_size)) - 0.1$/;"	v
+weights_0_1	numpy_mnist_dropout_batch.py	/^weights_0_1 = 0.2*np.random.random((pixels_per_image,hidden_size)) - 0.1$/;"	v
+weights_0_1	numpy_mnist_dropout_batch_tanh_softmax.py	/^weights_0_1 = 0.02*np.random.random((pixels_per_image,hidden_size))-0.01$/;"	v
+weights_0_1	numpy_xor.py	/^weights_0_1 = 2*np.random.random((2,hidden_size)) - 1$/;"	v
+weights_1_2	.ipynb_checkpoints/numpy_mnist_dropout-checkpoint.py	/^weights_1_2 = 0.2*np.random.random((hidden_size,num_labels)) - 0.1$/;"	v
+weights_1_2	.ipynb_checkpoints/numpy_mnist_dropout_batch-checkpoint.py	/^weights_1_2 = 0.2*np.random.random((hidden_size,num_labels)) - 0.1$/;"	v
+weights_1_2	.ipynb_checkpoints/numpy_mnist_dropout_batch_tanh_softmax-checkpoint.py	/^weights_1_2 = 0.2*np.random.random((hidden_size,num_labels)) - 0.1$/;"	v
+weights_1_2	.ipynb_checkpoints/numpy_xor-checkpoint.py	/^weights_1_2 = 2*np.random.random((hidden_size,1)) - 1$/;"	v
+weights_1_2	numpy_mnist_dropout.py	/^weights_1_2 = 0.2*np.random.random((hidden_size,num_labels)) - 0.1$/;"	v
+weights_1_2	numpy_mnist_dropout_batch.py	/^weights_1_2 = 0.2*np.random.random((hidden_size,num_labels)) - 0.1$/;"	v
+weights_1_2	numpy_mnist_dropout_batch_tanh_softmax.py	/^weights_1_2 = 0.2*np.random.random((hidden_size,num_labels)) - 0.1$/;"	v
+weights_1_2	numpy_xor.py	/^weights_1_2 = 2*np.random.random((hidden_size,1)) - 1$/;"	v
+x	keras_mobilenet_cifar10.py	/^    x = MobileNet(include_top=False)(image_input)$/;"	v
+x	keras_mobilenet_cifar10.py	/^    x = MobileNet(weights='imagenet', include_top=False)(image_input)$/;"	v
+x	keras_mobilenet_cifar10.py	/^    x = tf.keras.layers.Activation('softmax', name='act_softmax')(x)$/;"	v
+x	keras_mobilenet_cifar10.py	/^    x = tf.keras.layers.Conv2D(num_classes, 1, name='conv_preds')(x)$/;"	v
+x	keras_mobilenet_cifar10.py	/^    x = tf.keras.layers.Dense(4096, activation='relu', name='fc1')(x)$/;"	v
+x	keras_mobilenet_cifar10.py	/^    x = tf.keras.layers.Dense(4096, activation='relu', name='fc2')(x)$/;"	v
+x	keras_mobilenet_cifar10.py	/^    x = tf.keras.layers.Dense(num_classes, activation='softmax', name='predictions')(x)$/;"	v
+x	keras_mobilenet_cifar10.py	/^    x = tf.keras.layers.Dropout(rate=1e-3, name='dropout')(x)$/;"	v
+x	keras_mobilenet_cifar10.py	/^    x = tf.keras.layers.Flatten(name='flatten')(x)$/;"	v
+x	keras_mobilenet_cifar10.py	/^    x = tf.keras.layers.GlobalAveragePooling2D(name='global_average_pooling2d_12')(x)$/;"	v
+x	keras_mobilenet_cifar10.py	/^    x = tf.keras.layers.Reshape((1,1,1024), name='reshape_1')(x)$/;"	v
+x	keras_mobilenet_cifar10.py	/^    x = tf.keras.layers.Reshape((10,), name='reshape_2')(x)  $/;"	v
+x_test	autokeras_mnist.py	/^x_test = x_test.reshape(x_test.shape + (1,))$/;"	v
+x_test	keras_mnist.py	/^    x_test = x_test.reshape(x_test.shape[0], 1, img_rows, img_cols)$/;"	v
+x_test	keras_mnist.py	/^    x_test = x_test.reshape(x_test.shape[0], img_rows, img_cols, 1)$/;"	v
+x_test	keras_mnist.py	/^x_test = x_test.astype('float32')$/;"	v
+x_test	keras_mobilenet_cifar10.py	/^x_test = x_test.astype('float32') \/ 255 $/;"	v
+x_train	autokeras_mnist.py	/^x_train = x_train.reshape(x_train.shape + (1,))$/;"	v
+x_train	keras_mnist.py	/^    x_train = x_train.reshape(x_train.shape[0], 1, img_rows, img_cols)$/;"	v
+x_train	keras_mnist.py	/^    x_train = x_train.reshape(x_train.shape[0], img_rows, img_cols, 1)$/;"	v
+x_train	keras_mnist.py	/^x_train = x_train.astype('float32')$/;"	v
+x_train	keras_mobilenet_cifar10.py	/^x_train = x_train.astype('float32') \/ 255$/;"	v
+xavier_he_init_std	.ipynb_checkpoints/numpy_xor_detailed-checkpoint.py	/^    def xavier_he_init_std(self,n_in,n_out):$/;"	m	class:NeuralNetwork
+xavier_he_init_std	numpy_xor_detailed.py	/^    def xavier_he_init_std(self,n_in,n_out):$/;"	m	class:NeuralNetwork
+xor	.ipynb_checkpoints/numpy_xor-checkpoint.py	/^xor = np.array( [[ 1, 0 ],$/;"	v
+xor	numpy_xor.py	/^xor = np.array( [[ 1, 0 ],$/;"	v
+y	autokeras_mnist.py	/^y = clf.evaluate(x_test, y_test)$/;"	v
+y	keras_xor.py	/^y = np.array([[0],[1],[1],[0]], "float32")$/;"	v
+y	tf_xor_detailed.py	/^y = tf.placeholder(tf.float32, shape=(None), name='y')$/;"	v
+y	tf_xor_minimal.py	/^y = tf.placeholder(tf.float32, shape=[4,1], name = 'y')$/;"	v
+y_test	keras_mnist.py	/^y_test = keras.utils.to_categorical(y_test, num_classes)$/;"	v
+y_test	keras_mobilenet_cifar10.py	/^y_test = keras.utils.to_categorical(y_test, num_classes)$/;"	v
+y_test	tf_xor_detailed.py	/^y_test = y_train$/;"	v
+y_train	keras_mnist.py	/^y_train = keras.utils.to_categorical(y_train, num_classes)$/;"	v
+y_train	keras_mobilenet_cifar10.py	/^y_train = keras.utils.to_categorical(y_train, num_classes)$/;"	v
+y_train	tf_xor_detailed.py	/^y_train = [[0],[1],[1],[0]]$/;"	v
+y_train	tf_xor_detailed.py	/^y_train = np.array(y_train)$/;"	v
+y_train	tf_xor_eager_minimal.py	/^y_train = tf.convert_to_tensor([[0],[1],[1],[0]], dtype=tf.float32)$/;"	v
+y_train	tf_xor_minimal.py	/^y_train = [[0],[1],[1],[0]]$/;"	v
+y_valid	tf_xor_detailed.py	/^y_valid = y_train$/;"	v

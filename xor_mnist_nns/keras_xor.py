@@ -3,9 +3,9 @@ ADD ANOTHER FILE EAGER EXECUTION KERAS
 
 """
 
-from keras.models import Sequential
-from keras.layers.core import Dense, Activation
-from keras.optimizers import Adam, SGD
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers.core import Dense, Activation
+from tensorflow.keras.optimizers import Adam, SGD
 import numpy as np
 np.random.seed(42)
 

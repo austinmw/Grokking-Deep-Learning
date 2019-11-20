@@ -17,7 +17,7 @@ hidden_size = 6
 weights_0_1 = 2*np.random.random((2,hidden_size)) - 1
 weights_1_2 = 2*np.random.random((hidden_size,1)) - 1
 
-for iteration in range(40):
+for iteration in range(10000):
     layer_2_error = 0
     for i in range(len(xor)):
         layer_0 = xor[i:i+1]
